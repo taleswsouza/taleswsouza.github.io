@@ -1,0 +1,25 @@
+<h1>Tabela de preços</h1>
+<div class="w3-container">
+
+<table class="w3-table-all">
+    <thead>
+        <tr class="w3-green">
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Preços</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="produto in produtos track by $index" ng-dblclick="editar(produto)" class="w3-hover-blue">
+            <td>{{produto.id}}</td> 
+            <td>{{produto.descricao}}</td>
+            <td>{{produto.preco | currency}}</td>
+            <td><a href="#!cadastro/{{produto.id}}">[Editar]</a></td>
+            <td><a href="" ng-click="excluir(produto)">[Excluir]</a></td>
+        </tr>
+    </tbody>
+
+</table>
+</div>

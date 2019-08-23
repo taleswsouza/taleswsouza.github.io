@@ -8,8 +8,8 @@
     <div>
         <label for="descricao">Descrição </label>
         <input id="descricao" name="descricao" type="text" ng-model="produto.descricao" minlength="3" required/>
-        <span class="aviso" ng-show="cadastroProdutosForm.descricao.$dirty && cadastroProdutosForm.descricao.$error.required">O campo descrição é obrigatório!</span>
-        <span class="aviso" ng-show="cadastroProdutosForm.descricao.$dirty && cadastroProdutosForm.descricao.$error.minlength">O campo descrição precisa ter no mínimo 3 caracteres!</span>
+        <span class="w3-text-red" ng-show="cadastroProdutosForm.descricao.$dirty && cadastroProdutosForm.descricao.$error.required">O campo descrição é obrigatório!</span>
+        <span class="w3-text-red" ng-show="cadastroProdutosForm.descricao.$dirty && cadastroProdutosForm.descricao.$error.minlength">O campo descrição precisa ter no mínimo 3 caracteres!</span>
     </div>
 
     <div>
